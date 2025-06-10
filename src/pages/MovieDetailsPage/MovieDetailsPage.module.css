@@ -1,0 +1,87 @@
+.container {
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 24px;
+  text-decoration: none;
+  color: #e91e63;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: #ad1457;
+  text-decoration: underline;
+}
+
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .movieInfo {
+    flex-direction: row;
+  }
+}
+
+.poster {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  flex: 1;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+.score,
+.overview,
+.genres {
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.additionalInfo {
+  margin-top: 40px;
+}
+
+.additionalLinks {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.additionalLinks a {
+  color: #212121;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.additionalLinks a:hover {
+  color: #e91e63;
+  text-decoration: underline;
+}
+
+.hr {
+  border: none;
+  height: 1px;
+  background-color: #eee;
+  margin: 24px 0;
+}

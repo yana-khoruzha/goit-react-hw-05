@@ -1,0 +1,44 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  padding: 16px 32px;
+  align-items: center;
+  font-size: 20px;
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  color: #212121;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e91e63;
+  transition: width 0.3s ease;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: #e91e63;
+}
